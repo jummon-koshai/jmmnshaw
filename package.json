@@ -1,0 +1,11 @@
+{
+  "name": "JmmnShaw",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.6.0",
+    "pusher": "^5.1.3"
+  }
+}
