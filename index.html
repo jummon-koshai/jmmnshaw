@@ -364,6 +364,8 @@
 
       -webkit-background-clip: text;
 
+      background-clip: text;
+
       -webkit-text-fill-color: transparent;
 
       text-align: center;
@@ -567,6 +569,8 @@
       background: linear-gradient(45deg, var(--secondary), var(--accent));
 
       -webkit-background-clip: text;
+
+      background-clip: text;
 
       -webkit-text-fill-color: transparent;
 
@@ -1086,6 +1090,8 @@
 
       -webkit-background-clip: text;
 
+      background-clip: text;
+
       -webkit-text-fill-color: transparent;
 
       text-align: center;
@@ -1345,6 +1351,8 @@
       background: linear-gradient(45deg, var(--secondary), var(--accent));
 
       -webkit-background-clip: text;
+
+      background-clip: text;
 
       -webkit-text-fill-color: transparent;
 
@@ -5514,19 +5522,14 @@ const sendChatMessage = async () => {
 };
 
         // Add notification for other users
-
-        addNotification('chat', `New message from ${profileData[currentUser]?.name}`);
-
-      } catch (error) {
-
-        console.error('Error sending chat message:', error);
-
-        showToast('Failed to send message', 'error');
-
-      }
-
-    };
-
+        
+        try {
+  addNotification('chat', `New message from ${profileData[currentUser]?.name}`);
+} catch (error) {
+  console.error('Error sending chat message:', error);
+  showToast('Failed to send message', 'error');
+}
+       
     // Notification system
 
     const addNotification = (type, message) => {
