@@ -1,5 +1,5 @@
 {
-  "name": "JmmnShaw",
+  "name": "jmmnshaw",
   "version": "1.0.0",
   "scripts": {
     "build": "echo 'No build step needed'"
@@ -8,4 +8,5 @@
     "@neondatabase/serverless": "^0.6.0",
     "pusher": "^5.1.3"
   }
+
 }
