@@ -4124,19 +4124,37 @@
 
     };
 
-    // Custom cursor implementation
+    // Custom cursor implementation (optimized for smoothness with requestAnimationFrame)
 
     const initCursor = () => {
 
       const cursor = document.getElementById('cursor');
 
-    
+      let mouseX = 0, mouseY = 0;
+
+      let cursorX = 0, cursorY = 0;
+
+      const updateCursor = () => {
+
+        cursorX += (mouseX - cursorX) * 0.3; // Smoothing factor for even smoother movement
+
+        cursorY += (mouseY - cursorY) * 0.3;
+
+        cursor.style.transform = `translate(${cursorX - 10}px, ${cursorY - 10}px)`;
+
+        requestAnimationFrame(updateCursor);
+
+      };
 
       document.addEventListener('mousemove', (e) => {
 
-        cursor.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+        mouseX = e.clientX;
+
+        mouseY = e.clientY;
 
       });
+
+      requestAnimationFrame(updateCursor);
 
     
 
@@ -5513,6 +5531,8 @@ const sendChatMessage = async () => {
     chatMessages = chatMessages.filter(m => m.id !== tempId);
     chatMessages.push(savedMsg);
     loadChatMessages(); // Refresh to ensure sync with Neon
+    // Add notification for self (optional, since Pusher handles others)
+    addNotification('chat', `New message from ${profileData[currentUser]?.name || currentUser}`);
   } catch (error) {
     console.error('Error sending chat message:', error);
     showToast('Failed to send message. Check console for details.', 'error');
@@ -5521,15 +5541,6 @@ const sendChatMessage = async () => {
   }
 };
 
-        // Add notification for other users
-        
-        try {
-  addNotification('chat', `New message from ${profileData[currentUser]?.name}`);
-} catch (error) {
-  console.error('Error sending chat message:', error);
-  showToast('Failed to send message', 'error');
-}
-       
     // Notification system
 
     const addNotification = (type, message) => {
