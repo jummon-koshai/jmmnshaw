@@ -1,6 +1,6 @@
 # JMMN x SHAW
 
-![JMMN x SHAW Logo](https://via.placeholder.com/150?text=JMMN+x+SHAW)  
+
 **A Cyberpunk Social Network for the Digital Frontier**
 
 Welcome to **JMMN x SHAW**, a futuristic, neon-lit social networking platform designed to immerse users in a cyberpunk-inspired digital experience. Built with a sleek, responsive interface, this project combines social media functionalities, AI-driven interactions, and a blogging platform, all wrapped in a visually stunning cyberpunk aesthetic. Whether you're sharing posts, engaging with the AI-powered CyberBhai, or publishing neon-charged articles, JMMN x SHAW offers a unique environment for tech enthusiasts and cyber warriors alike.
@@ -30,9 +30,9 @@ Welcome to **JMMN x SHAW**, a futuristic, neon-lit social networking platform de
 
 ## Demo
 
-Explore the live demo of JMMN x SHAW (replace with actual deployment link once available):
+Explore the live demo of JMMN x SHAW:
 
-[Live Demo](#) *(Coming soon!)*
+[Live Demo](#jmmnshaw.netlify.app) 
 
 Default credentials for testing:
 - **Username**: 1 or 2
