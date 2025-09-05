@@ -32,7 +32,7 @@ Welcome to **JMMN x SHAW**, a futuristic, neon-lit social networking platform de
 
 Explore the live demo of JMMN x SHAW:
 
-[Live Demo](#jmmnshaw.netlify.app) 
+[Live Demo](https://jmmnshaw.netlify.app)
 
 Default credentials for testing:
 - **Username**: 1 or 2
