@@ -149,7 +149,7 @@ We welcome contributions to enhance JMMN x SHAW! To contribute:
    - Submit a pull request on GitHub with a clear description of your changes.
    - Reference any related issues.
 
-Please review our [Contributing Guidelines](CONTRIBUTING.md) (to be created) for more details.
+Please review our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## License
 
@@ -159,8 +159,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions, suggestions, or feedback:
 - **GitHub Issues**: [Create an issue](https://github.com/jummon-koshai/jmmnshaw/issues)
-- **Email**: [contact@jmmnxshaw.example.com](mailto:contact@jmmnxshaw.example.com) (replace with actual email)
-- **Community**: Join our [Discord community](#) (coming soon!)
+- **Email**: [contact@jmmnxshaw.example.com](mailto:contact@jmmnxshaw.example.com)
+- **Community**: Join our [Discord community](https://discord.com)
 
 ---
 
